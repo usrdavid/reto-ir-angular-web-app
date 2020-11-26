@@ -1,0 +1,12 @@
+<h3>Entrada</h3>
+<form (ngSubmit)="addClient()">
+  <label>Nombre</label>
+  <input type="text" name="nombre" [(ngModel)]="client.nombre">
+  <label>Apellido</label>
+  <input type="text" name="apellido" [(ngModel)]="client.apellido">
+  <label>Edad</label>
+  <input type="number" name="edad" [(ngModel)]="client.edad">
+  <label>Nacimiento</label>
+  <input type="text" name="nacimiento" [(ngModel)]="client.nacimiento">
+  <button type="submit">Guardar</button>
+</form>

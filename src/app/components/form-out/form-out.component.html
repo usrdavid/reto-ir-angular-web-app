@@ -1,0 +1,13 @@
+<h3>Salida</h3>
+<div *ngIf="clients.length > 0; else noclients">
+  <ul>
+    <li class="text" *ngFor="let client of clients">
+      {{client.nombre}} {{client.apellido}} {{client.edad}} {{client.nacimiento}}
+    </li>
+  </ul>
+  <h3>Promedio edad </h3>{{average}}
+  <h3>Desviación estándar edad </h3>{{stdDev}}
+</div>
+<ng-template #noclients>
+  <p>No clients yet.</p>
+</ng-template>
